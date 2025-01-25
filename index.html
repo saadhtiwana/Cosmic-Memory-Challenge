@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Simon: Cosmic Memory Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body>
+  <div id="game-container">
+    <div id="starfield"></div>
+    <h1 id="level-title">Cosmic Memory Challenge</h1>
+    <div class="container">
+      <div class="row">
+        <div type="button" id="green" class="btn green"></div>
+        <div type="button" id="red" class="btn red"></div>
+      </div>
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
+    </div>
+    <div id="control-panel">
+      <button id="start-btn">Initiate Sequence</button>
+      <div id="score">Neural Links: <span id="score-value">0</span></div>
+      <div id="high-score">Peak Synapses: <span id="high-score-value">0</span></div>
+    </div>
+  </div>
+  <div id="particles"></div>
+  <footer id="game-footer">
+    <p>Cosmic Memory Challenge v1.0 | Created by Saad Tiwana</p>
+    <div id="footer-lights"></div>
+  </footer>
+  <audio id="green-sound" src="sounds/green.mp3"></audio>
+  <audio id="red-sound" src="sounds/red.mp3"></audio>
+  <audio id="yellow-sound" src="sounds/yellow.mp3"></audio>
+  <audio id="blue-sound" src="sounds/blue.mp3"></audio>
+  <audio id="wrong-sound" src="sounds/wrong.mp3"></audio>
+  <script src="game.js" type="module"></script>
+</body>
+</html>
